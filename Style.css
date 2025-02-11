@@ -282,3 +282,72 @@ ul a{
         align-items: center;
     }
 }
+/* 🌟 For Tablets & Small Laptops (768px and below) */
+@media (max-width: 768px) {
+    .navbar, .panel {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-search {
+        width: 100%;
+    }
+
+    .shop-section .box {
+        width: 45%;
+    }
+}
+
+/* 🌟 For Small Phones (480px and below) */
+@media (max-width: 480px) {
+    .shop-section .box {
+        width: 100%;
+    }
+
+    .panel-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section {
+        height: 250px;
+        background-size: contain;
+    }
+
+    .hero-message {
+        font-size: 0.75rem;
+        width: 90%;
+    }
+}
+
+/* 🌟 For Specific Android Devices (360px - 414px) */
+@media (min-width: 360px) and (max-width: 414px) {
+    body {
+        font-size: 14px;
+    }
+
+    .nav-search {
+        flex-direction: row;
+        height: 35px;
+    }
+
+    .shop-section .box {
+        width: 48%;
+    }
+}
+
+/* 🌟 For iPhones (Apple Devices) */
+@media only screen and (max-width: 430px) and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (max-width: 430px) and (min-resolution: 192dpi) {
+    body {
+        font-size: 15px;
+    }
+
+    .shop-section .box {
+        width: 100%;
+    }
+
+    .hero-message {
+        font-size: 0.8rem;
+    }
+}
